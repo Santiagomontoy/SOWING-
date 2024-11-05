@@ -1,0 +1,232 @@
+* {
+				margin:0px;
+				padding:0px;
+			}
+			body{
+				background: linear-gradient(to right, rgb(0 0 0 / .75),rgb(0 0 0 / .75)), url("./green-leaves-background-39hzfg9nvuarivt1.jpg");
+			background-size: cover;
+			
+			}
+			
+			
+			#header {
+				margin:auto;
+				width:400px;
+				font-family: Cambria,serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			
+			}
+			
+			.nav li a {
+				background-color:#59c62e85;
+				height: 20px;
+				color:rgb(255, 255, 0);
+				text-decoration:none;
+				padding:10px 0px;
+				display:block;
+			    margin-right: 10px;
+				
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top: 0px;
+			}
+
+
+
+
+/* Estilos CSS para los botones de menú */
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: min-content;
+
+}
+
+.menu-button {
+	border: 0;
+	background-image: linear-gradient(150deg,#25a9ae, #3ba861, #04ff00);
+	border-radius: 8px;
+	color: #fff;
+	display: flex;
+	font-size: 18px;
+	padding: 4px;
+	cursor: pointer;
+	transition: .3s;
+	
+}
+button span{
+	background-color: #000000;
+	padding: 16px 24px;
+	border-radius: 6px;
+	transition: 1s;
+	width: 100%;
+}
+
+button:hover span{
+	background: none;
+}
+button:active{
+	transform: scale(0.9);
+}
+
+
+
+.menu-button:last-child {
+    margin-right: 0;
+	
+}
+
+/* Estilos CSS para las imágenes */
+.image-container {
+    text-align: center;
+	
+}
+
+.image {
+    display: none;
+	width: 50%;
+	position: relative;
+	left: 380px;
+	top: -200px;
+	margin-top: 40px;
+}
+
+.image.active {
+    display: block;
+}
+
+
+
+
+
+.wrap-texto{
+ color:#fff;
+ text-align: center;
+ width: 80%;
+ text-align: left;
+ margin: 0 auto;
+}
+
+.wrap-p{
+	color:#fff;
+	text-align: center;
+	width: 50%;
+}
+
+
+/* Estilo para el banner en el encabezado */
+header {
+    background-color: #333333db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-slide {
+    display: flex;
+	flex-wrap: nowrap;
+  animation: slide 10s infinite; 
+}
+#contenedorImagenes{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.banner-slide .slide {
+    flex: 0 0 100%;
+}
+
+.banner-slide .slide img {
+    width: 10%;
+    height: auto;
+}
+
+/* Estilo para los botones de control */
+.slide-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.slide-controls label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #777;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Estilo para los botones de control seleccionados */
+input[type="radio"]:checked + .slide-controls label {
+    background-color: #f44336;
+}
+
+/* Estilo para ocultar los botones de radio */
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Animación del banner */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-400);
+    }
+	100%{
+        transform: translateX(0);
+    }
+  
+}
+
+.image-bien{
+	padding-right: 600px;
+	position: relative;
+	top:-380px ;left: -400px;
+	}
+ 
+
